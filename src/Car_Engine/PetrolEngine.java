@@ -13,9 +13,4 @@ public class PetrolEngine implements Engine{
        // System.out.println("Stopping Petrol Engine");
         return "Stopping Petrol Engine";
     }
-
-    @Override
-    public Engine getEngineType() {
-        return this;
-    }
 }

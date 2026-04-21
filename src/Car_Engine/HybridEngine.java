@@ -1,13 +1,13 @@
 package Car_Engine;
 
-public class DieselEngine implements Engine {
+public class HybridEngine implements Engine {
     @Override
     public String startEngine() {
-        return "Starting DieselEngine\"";
+        return "Starting Hybrid Engine";
     }
 
     @Override
     public String stopEngine() {
-        return "Stopping DieselEngine";
+        return "Stopping Hybrid Engine";
     }
 }
