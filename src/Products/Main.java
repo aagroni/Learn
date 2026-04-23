@@ -4,6 +4,7 @@ package Products;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,8 +20,13 @@ public class Main {
        products.add(p2);
        products.add(p3);
 
-        for(Product p : products) {
-            p.process();
-        }
+       //Examples of Using Funcional Interfaces
+       //Consumer<Product> c = x -> System.out.println(x);
+       Consumer<Product> c = System.out::println;
+       Consumer<Product> ex = p -> p.process();
+
+        products.forEach(c);
+        System.out.println("_______________________________");
+        products.forEach(ex);
     }
 }
